@@ -1,3 +1,6 @@
+Forked from dperson/samba to set force user as root instead of smbuser for samba process.  Normally this would be a horrible security violation, and I wouldn't suggest anyone use this who doesn't know what they're doing.
+If you do know what you're doing though, setting force user as root when running in a docker container alows the samba users to write to shares where samba gives them write permissions.  Useful for things like writing to Docker Volume Containers mounted into your Samba server for sharing.
+
 [![logo](https://raw.githubusercontent.com/dperson/samba/master/logo.jpg)](https://www.samba.org)
 
 # Samba
