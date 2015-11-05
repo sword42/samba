@@ -16,7 +16,7 @@ RUN export DEBIAN_FRONTEND='noninteractive' && \
     echo '   directory mask = 0775' >>/etc/samba/smb.conf && \
     echo '   force create mode = 0664' >>/etc/samba/smb.conf && \
     echo '   force directory mode = 0775' >>/etc/samba/smb.conf && \
-    echo '   force user = smbuser' >>/etc/samba/smb.conf && \
+    echo '   force user = root' >>/etc/samba/smb.conf && \
     echo '   force group = users' >>/etc/samba/smb.conf && \
     echo '' >>/etc/samba/smb.conf
 COPY samba.sh /usr/bin/
